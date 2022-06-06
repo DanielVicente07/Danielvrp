@@ -33,19 +33,21 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menuCadMedico = new javax.swing.JMenuItem();
         btnCadPaciente = new javax.swing.JMenuItem();
         btnCadConsulta = new javax.swing.JMenuItem();
-        btnSobre = new javax.swing.JMenu();
+        btnSair = new javax.swing.JMenuItem();
+        btnMenuSobre = new javax.swing.JMenu();
+        btnSobre = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SISTEMA DE CADASTRO");
 
-        menuCadastro.setText("CADASTRO");
+        menuCadastro.setText("ARQUIVO");
         menuCadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuCadastroActionPerformed(evt);
             }
         });
 
-        menuCadMedico.setText("MEDICO");
+        menuCadMedico.setText("CADASTRAR MEDICO");
         menuCadMedico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuCadMedicoActionPerformed(evt);
@@ -53,7 +55,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         menuCadastro.add(menuCadMedico);
 
-        btnCadPaciente.setText("PACIENTE");
+        btnCadPaciente.setText("CADASTRAR PACIENTE");
         btnCadPaciente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCadPacienteActionPerformed(evt);
@@ -61,7 +63,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         menuCadastro.add(btnCadPaciente);
 
-        btnCadConsulta.setText("CONSULTA");
+        btnCadConsulta.setText("CADASTRAR CONSULTA");
         btnCadConsulta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCadConsultaActionPerformed(evt);
@@ -69,7 +71,22 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         menuCadastro.add(btnCadConsulta);
 
+        btnSair.setText("SAIR");
+        btnSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSairActionPerformed(evt);
+            }
+        });
+        menuCadastro.add(btnSair);
+
         jMenuBar1.add(menuCadastro);
+
+        btnMenuSobre.setText("SOBRE");
+        btnMenuSobre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMenuSobreActionPerformed(evt);
+            }
+        });
 
         btnSobre.setText("SOBRE");
         btnSobre.addActionListener(new java.awt.event.ActionListener() {
@@ -77,7 +94,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 btnSobreActionPerformed(evt);
             }
         });
-        jMenuBar1.add(btnSobre);
+        btnMenuSobre.add(btnSobre);
+
+        jMenuBar1.add(btnMenuSobre);
 
         setJMenuBar(jMenuBar1);
 
@@ -105,9 +124,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
         telaMed.show();
     }//GEN-LAST:event_menuCadMedicoActionPerformed
 
-    private void btnSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSobreActionPerformed
+    private void btnMenuSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuSobreActionPerformed
         JOptionPane.showMessageDialog(rootPane, "CRIADO POR DANIEL VICENTE ROCHA PEREIRA");
-    }//GEN-LAST:event_btnSobreActionPerformed
+    }//GEN-LAST:event_btnMenuSobreActionPerformed
 
     private void btnCadPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadPacienteActionPerformed
         TelaCadPaciente telaPac = new TelaCadPaciente();
@@ -119,6 +138,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
         telaCon.show();
     }//GEN-LAST:event_btnCadConsultaActionPerformed
 
+    private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btnSairActionPerformed
+
+    private void btnSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSobreActionPerformed
+        JOptionPane.showMessageDialog(rootPane, "CRIADO POR DANIEL VICENTE ROCHA PEREIRA");
+    }//GEN-LAST:event_btnSobreActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -126,7 +153,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem btnCadConsulta;
     private javax.swing.JMenuItem btnCadPaciente;
-    private javax.swing.JMenu btnSobre;
+    private javax.swing.JMenu btnMenuSobre;
+    private javax.swing.JMenuItem btnSair;
+    private javax.swing.JMenuItem btnSobre;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem menuCadMedico;
     private javax.swing.JMenu menuCadastro;

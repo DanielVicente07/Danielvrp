@@ -6,7 +6,7 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="menuCadastro">
           <Properties>
-            <Property name="text" type="java.lang.String" value="CADASTRO"/>
+            <Property name="text" type="java.lang.String" value="ARQUIVO"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuCadastroActionPerformed"/>
@@ -14,7 +14,7 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="menuCadMedico">
               <Properties>
-                <Property name="text" type="java.lang.String" value="MEDICO"/>
+                <Property name="text" type="java.lang.String" value="CADASTRAR MEDICO"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuCadMedicoActionPerformed"/>
@@ -22,7 +22,7 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="btnCadPaciente">
               <Properties>
-                <Property name="text" type="java.lang.String" value="PACIENTE"/>
+                <Property name="text" type="java.lang.String" value="CADASTRAR PACIENTE"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCadPacienteActionPerformed"/>
@@ -30,21 +30,39 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="btnCadConsulta">
               <Properties>
-                <Property name="text" type="java.lang.String" value="CONSULTA"/>
+                <Property name="text" type="java.lang.String" value="CADASTRAR CONSULTA"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCadConsultaActionPerformed"/>
               </Events>
             </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="btnSair">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="SAIR"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSairActionPerformed"/>
+              </Events>
+            </MenuItem>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="btnSobre">
+        <Menu class="javax.swing.JMenu" name="btnMenuSobre">
           <Properties>
             <Property name="text" type="java.lang.String" value="SOBRE"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSobreActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenuSobreActionPerformed"/>
           </Events>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="btnSobre">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="SOBRE"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSobreActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
         </Menu>
       </SubComponents>
     </Menu>
