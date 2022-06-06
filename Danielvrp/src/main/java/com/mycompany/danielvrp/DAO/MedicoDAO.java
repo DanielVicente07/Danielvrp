@@ -41,10 +41,10 @@ public class MedicoDAO extends Conexao {
         }
     }
     
-    public String excluirMedico(String matricula){
+    public String excluirMedico(String id){
         try{
             String sentenca;
-            sentenca = "DELETE FROM MEDICO WHERE IDMEDICO = "+ matricula;
+            sentenca = "DELETE FROM MEDICO WHERE IDMEDICO = "+ id;
             return this.atualizarBanco(sentenca);
         }
         catch(Exception e){
