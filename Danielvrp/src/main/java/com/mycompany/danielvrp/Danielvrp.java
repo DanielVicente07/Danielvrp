@@ -2,7 +2,7 @@
  CREATE TABLE `danielvrp`.`medico` (
   `idmedico` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(100) NOT NULL,
-  `especialidade` VARCHAR(100) NOT NULL,
+  `especialidade` INT NOT NULL,
   `crm` INT NOT NULL,
   `CPF` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`idmedico`));
